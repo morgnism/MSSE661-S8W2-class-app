@@ -43,7 +43,7 @@ li {
   margin-top: 50px;
 }
 
-.center {
+.login {
   display: flex;
   flex-direction: column;
 }

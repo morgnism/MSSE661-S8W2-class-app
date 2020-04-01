@@ -1,0 +1,23 @@
+.main {
+  width: 100%;
+}
+
+.span-12 {
+  width: 100%;
+}
+
+.span-8 {
+  width: 75%;
+}
+
+.span-6 {
+  width: 50%;
+}
+
+.span-3 {
+  width: 25%;
+}
+
+.span-1 {
+  width: 1%;
+}
