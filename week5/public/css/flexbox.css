@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  padding-top: 12px;
+}
+
+nav ul {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  padding: 25px;
+  border-radius: 20px;
+  border: 1px solid #d3d3d3;
+}
+
+.center form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+label {
+  padding-bottom: 20px;
+  width: 80%;
+}
+
+label > span {
+  display: none;
+}
+
+input[type='text'],
+input[type='password'] {
+  height: 20px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 100px;
+  background-color: #256fde;
+  color: white;
+  margin-bottom: 10px;
+}
