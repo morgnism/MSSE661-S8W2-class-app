@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+        </ul>
+        <a id="login" href="/login.html">Sign In</a>
+      </nav>
+    </header>
+
+    <div class="center">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-split">
+            <div class="right-border">
+              <h2 class="card-title">Sign In</h2>
+              <form novalidate>
+                <div class="form-group">
+                  <label for="formInputUsername">Username</label>
+                  <input
+                    id="formInputUsername"
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="formInputPassword">Password</label>
+                  <input
+                    id="formInputPassword"
+                    type="password"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group form-group-btn">
+                  <button class="btn btn-primary" onclick="doLogin(event)">
+                    Sign In
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="left-border">
+              <h2 class="card-title">Register</h2>
+              <form novalidate>
+                <div class="form-group">
+                  <label for="formInputUsernameReg">Username</label>
+                  <input
+                    id="formInputUsernameReg"
+                    type="text"
+                    class="form-control"
+                    placeholder="johndoeboy"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="formInputPasswordReg">Password</label>
+                  <input
+                    id="formInputPasswordReg"
+                    type="password"
+                    class="form-control"
+                    placeholder="doeboy123"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="formInputEmailReg">Email</label>
+                  <input
+                    id="formInputEmailReg"
+                    type="email"
+                    class="form-control"
+                    placeholder="john@thedoeboy.com"
+                  />
+                </div>
+                <div class="form-group form-group-btn">
+                  <button class="btn btn-primary" onclick="doRegister(event)">
+                    Sign Up
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="author">
+        <p>Author: <a href="https://github.com/chan1ks">Morgan Worrell</a></p>
+      </div>
+    </footer>
+
+    <script src="./src/api.config.js"></script>
+    <script src="./src/simple-storage.js"></script>
+    <script src="./src/service-helpers.js"></script>
+    <script src="./src/auth.service.js"></script>
+    <script src="./src/auth.js"></script>
+  </body>
+</html>

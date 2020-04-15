@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Your Tasks</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+        </ul>
+        <a id="logout" href="" onclick="doLogout(event)">Logout</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="task-form">
+        <form>
+          <div class="form-row">
+            <div class="col-md-6">
+              <label class="sr-only" for="formInputTaskName">Task Name</label>
+              <input
+                id="formInputTaskName"
+                class="form-control"
+                type="text"
+                name="task-name"
+                placeholder="Task name"
+              />
+            </div>
+            <div class="col-md-3">
+              <label class="sr-only" for="formSelectStatus">Status</label>
+              <select
+                id="formSelectStatus"
+                class="custom-select mr-sm-2"
+                name="task-name"
+              >
+                <option value="1" selected>pending</option>
+                <option value="2">completed</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                onclick="doAddTask(event)"
+              >
+                ADD
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div id="tasks">
+        <div>Loading...</div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="author">
+        <p>Author: <a href="https://github.com/chan1ks">Morgan Worrell</a></p>
+      </div>
+    </footer>
+    <script src="./src/api.config.js"></script>
+    <script src="./src/simple-storage.js"></script>
+    <script src="./src/route-guard.js"></script>
+    <script src="./src/service-helpers.js"></script>
+    <script src="./src/auth.service.js"></script>
+    <script src="./src/tasks.service.js"></script>
+    <script src="./src/build-tasks-list.js"></script>
+    <script src="./src/add-task.js"></script>
+    <script src="./src/auth.js"></script>
+  </body>
+</html>

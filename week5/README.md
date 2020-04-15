@@ -1,3 +1,3 @@
-# Module 4 - Integrating Javascript and Database
+# Module 5 - Advanced JavaScript Concepts
 
-Have our website talk to the back-end service and perform functions on the database.
+Have our website talk to the back-end service and display data.
