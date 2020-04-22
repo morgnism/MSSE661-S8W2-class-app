@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>About</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+        </ul>
+        <a id="login" href="/login.html">Sign In</a>
+        <a id="logout" href="" onclick="doLogout(event)">Logout</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="center">
+        <h2>Some stuff about a site.</h2>
+      </div>
+    </div>
+
+    <footer>
+      <p>Author: <a href="https://github.com/chan1ks">Morgan Worrell</a></p>
+    </footer>
+    <script src="./lib/api.config.js"></script>
+    <script src="./lib/simple-storage.js"></script>
+    <script src="./lib/service-helpers.js"></script>
+    <script src="./lib/auth.service.js"></script>
+    <script src="./lib/auth.js"></script>
+  </body>
+</html>
