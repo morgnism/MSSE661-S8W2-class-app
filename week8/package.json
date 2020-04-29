@@ -1,0 +1,15 @@
+{
+  "name": "week3",
+  "version": "1.0.0",
+  "description": "Serving our website to a browser and extend our website's capabilities with an API.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}

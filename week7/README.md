@@ -1,3 +1,3 @@
-# Module 6 - JavaScript and Ajax
+# Module 7 - UX Design
 
-Perform additional Ajax requests agatodo the data service.
+Improve and enhance the front-end app with better styling and UX design.

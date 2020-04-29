@@ -1,0 +1,15 @@
+.card-split {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  padding: 20px;
+}
+
+.right-border {
+  border-right: 1px solid grey;
+  padding-right: 50px;
+}
+
+.left-border {
+  padding-left: 50px;
+}
