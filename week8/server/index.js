@@ -3,13 +3,13 @@ var fs = require('fs');
 var https = require('https');
 const app = express();
 
-const port = process.env.PORT || 4000;
+const httpPort = process.env.PORT || 4000;
 const httpsPort = process.env.HTTPS_PORT || 4443;
 
 app.use(express.static('public'));
 
-app.listen(port, () => {
-  console.log('Server started at http://localhost:%s', port);
+app.listen(httpPort, () => {
+  console.log('Server started at http://localhost:%s', httpPort);
 });
 
 https
@@ -20,6 +20,6 @@ https
     },
     app
   )
-  .listen(httpsPort, function () {
+  .listen(httpsPort, () => {
     console.log('Server started at http://localhost:%s', httpsPort);
   });
